@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма предмета - Dota Relics Catalog</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Dota Relics</a>
+        <nav class="main-nav">
+            <a href="index.html">Каталог</a>
+            <a href="admin.html">Админка</a>
+        </nav>
+    </header>
+
+    <main class="admin-page">
+        <div class="admin-header">
+            <div>
+                <h1>Форма предмета</h1>
+                <p>Позже эта форма будет отправлять данные на C++ backend.</p>
+            </div>
+            <a class="button button-secondary" href="admin.html">Назад</a>
+        </div>
+
+        <form class="item-form">
+            <label>
+                Название
+                <input type="text" name="name" placeholder="Manifold Paradox" required>
+            </label>
+
+            <label>
+                Герой
+                <input type="text" name="hero" placeholder="Phantom Assassin" required>
+            </label>
+
+            <label>
+                Редкость
+                <select name="rarity" required>
+                    <option value="">Выберите редкость</option>
+                    <option>Common</option>
+                    <option>Rare</option>
+                    <option>Mythical</option>
+                    <option>Immortal</option>
+                    <option>Arcana</option>
+                </select>
+            </label>
+
+            <label>
+                Тип
+                <input type="text" name="type" placeholder="Оружие" required>
+            </label>
+
+            <label>
+                Цена
+                <input type="number" name="price" min="0" placeholder="2499" required>
+            </label>
+
+            <label>
+                Коллекция
+                <input type="text" name="collection" placeholder="Arcana Collection">
+            </label>
+
+            <label>
+                Ссылка на изображение
+                <input type="text" name="image_url" placeholder="/static/img/item.png">
+            </label>
+
+            <label>
+                Описание
+                <textarea name="description" rows="5" placeholder="Краткое описание предмета"></textarea>
+            </label>
+
+            <button class="button" type="submit">Сохранить</button>
+        </form>
+    </main>
+
+    <script src="../static/js/app.js"></script>
+</body>
+</html>

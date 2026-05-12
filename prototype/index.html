@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota Relics Catalog</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Dota Relics</a>
+        <nav class="main-nav">
+            <a href="index.html">Каталог</a>
+            <a href="admin.html">Админка</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <aside class="sidebar">
+            <h2>Коллекции</h2>
+            <a href="#">Arcana</a>
+            <a href="#">Immortal</a>
+            <a href="#">Mythical</a>
+            <a href="#">Collector's Cache</a>
+        </aside>
+
+        <section class="content">
+            <div class="page-title">
+                <h1>Каталог предметов Dota 2</h1>
+                <p>Прототип публичной страницы со списком предметов.</p>
+            </div>
+
+            <div class="toolbar">
+                <input type="search" placeholder="Поиск по названию">
+                <select>
+                    <option>Все редкости</option>
+                    <option>Mythical</option>
+                    <option>Immortal</option>
+                    <option>Arcana</option>
+                </select>
+            </div>
+
+            <div class="catalog-grid">
+                <article class="item-card">
+                    <div class="item-image">IMG</div>
+                    <div class="item-meta">
+                        <span class="rarity rarity-immortal">Immortal</span>
+                        <span>Phantom Assassin</span>
+                    </div>
+                    <h2>Manifold Paradox</h2>
+                    <p>Клинки с изменяемой формой и особым эффектом убийства.</p>
+                    <div class="card-footer">
+                        <strong>2499 ₽</strong>
+                        <a href="item.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="item-card">
+                    <div class="item-image">IMG</div>
+                    <div class="item-meta">
+                        <span class="rarity rarity-arcana">Arcana</span>
+                        <span>Shadow Fiend</span>
+                    </div>
+                    <h2>Demon Eater</h2>
+                    <p>Редкий предмет с изменением анимаций и внешнего вида героя.</p>
+                    <div class="card-footer">
+                        <strong>1790 ₽</strong>
+                        <a href="item.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="item-card">
+                    <div class="item-image">IMG</div>
+                    <div class="item-meta">
+                        <span class="rarity rarity-mythical">Mythical</span>
+                        <span>Invoker</span>
+                    </div>
+                    <h2>Dark Artistry Cape</h2>
+                    <p>Плащ из набора Dark Artistry для Invoker.</p>
+                    <div class="card-footer">
+                        <strong>640 ₽</strong>
+                        <a href="item.html">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="../static/js/app.js"></script>
+</body>
+</html>
