@@ -24,7 +24,7 @@
             <a class="button button-secondary" href="admin.html">Назад</a>
         </div>
 
-        <form class="item-form">
+        <form class="item-form" data-item-form data-prototype-form novalidate>
             <label>
                 Название
                 <input type="text" name="name" placeholder="Manifold Paradox" required>
@@ -73,6 +73,7 @@
             </label>
 
             <button class="button" type="submit">Сохранить</button>
+            <p class="form-message" data-form-message></p>
         </form>
     </main>
 

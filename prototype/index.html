@@ -31,17 +31,17 @@
             </div>
 
             <div class="toolbar">
-                <input type="search" placeholder="Поиск по названию">
-                <select>
-                    <option>Все редкости</option>
-                    <option>Mythical</option>
-                    <option>Immortal</option>
-                    <option>Arcana</option>
+                <input type="search" placeholder="Поиск по названию или герою" data-catalog-search>
+                <select data-rarity-filter>
+                    <option value="">Все редкости</option>
+                    <option value="Mythical">Mythical</option>
+                    <option value="Immortal">Immortal</option>
+                    <option value="Arcana">Arcana</option>
                 </select>
             </div>
 
             <div class="catalog-grid">
-                <article class="item-card">
+                <article class="item-card" data-catalog-card data-name="Manifold Paradox" data-hero="Phantom Assassin" data-rarity="Immortal">
                     <div class="item-image">IMG</div>
                     <div class="item-meta">
                         <span class="rarity rarity-immortal">Immortal</span>
@@ -55,7 +55,7 @@
                     </div>
                 </article>
 
-                <article class="item-card">
+                <article class="item-card" data-catalog-card data-name="Demon Eater" data-hero="Shadow Fiend" data-rarity="Arcana">
                     <div class="item-image">IMG</div>
                     <div class="item-meta">
                         <span class="rarity rarity-arcana">Arcana</span>
@@ -69,7 +69,7 @@
                     </div>
                 </article>
 
-                <article class="item-card">
+                <article class="item-card" data-catalog-card data-name="Dark Artistry Cape" data-hero="Invoker" data-rarity="Mythical">
                     <div class="item-image">IMG</div>
                     <div class="item-meta">
                         <span class="rarity rarity-mythical">Mythical</span>
@@ -83,6 +83,8 @@
                     </div>
                 </article>
             </div>
+
+            <p class="empty-state" data-empty-state hidden>Ничего не найдено. Попробуйте изменить поиск или фильтр.</p>
         </section>
     </main>
 
