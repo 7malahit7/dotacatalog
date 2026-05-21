@@ -42,11 +42,16 @@ function setupCatalogFilters() {
 
 function setupDeleteButtons() {
     document.querySelectorAll("[data-delete]").forEach((button) => {
-        button.addEventListener("click", () => {
+        button.addEventListener("click", (event) => {
             const itemName = button.dataset.itemName || "выбранный предмет";
             const confirmed = confirm(`Удалить "${itemName}" из каталога?`);
 
-            if (confirmed) {
+            if (!confirmed) {
+                event.preventDefault();
+                return;
+            }
+
+            if (button.dataset.removeRow === "true") {
                 button.closest("tr")?.remove();
             }
         });
